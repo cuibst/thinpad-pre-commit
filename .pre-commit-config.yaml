@@ -1,0 +1,8 @@
+repos:
+- repo: local
+  hooks:
+    - id: check-warnings
+      name: check-warnings
+      entry: python .ci-scripts/check-log.py
+      language: python
+      pass_filenames: false
